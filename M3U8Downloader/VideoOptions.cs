@@ -98,6 +98,7 @@ namespace M3U8Downloader
                 throw new ArgumentNullException(nameof(Input));
             }
 
+/*
             bool isUrl = IsURL(Input);
             if (!isUrl)
             {
@@ -111,7 +112,7 @@ namespace M3U8Downloader
                     Input = input_path;
                 }
             }
-
+ */
             if (string.IsNullOrEmpty(Output))
             {
                 throw new ArgumentNullException(nameof(Output));
