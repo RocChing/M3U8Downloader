@@ -98,7 +98,6 @@ namespace M3U8Downloader
                 throw new ArgumentNullException(nameof(Input));
             }
 
-/*
             bool isUrl = IsURL(Input);
             if (!isUrl)
             {
@@ -112,7 +111,7 @@ namespace M3U8Downloader
                     Input = input_path;
                 }
             }
- */
+
             if (string.IsNullOrEmpty(Output))
             {
                 throw new ArgumentNullException(nameof(Output));
@@ -187,7 +186,7 @@ namespace M3U8Downloader
 
         private bool IsURL(string url)
         {
-            string pattern = @"^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$";
+            string pattern = @"^(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]$";
             return Regex.IsMatch(url, pattern, RegexOptions.Singleline);
         }
     }

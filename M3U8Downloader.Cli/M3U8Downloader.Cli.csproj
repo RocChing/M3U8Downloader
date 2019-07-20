@@ -4,9 +4,9 @@
     <!--<OutputType>Exe</OutputType>
     <RuntimeIdentifier>win10-x64</RuntimeIdentifier>-->
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <Version>1.0.2</Version>
-    <FileVersion>1.0.0.2</FileVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
